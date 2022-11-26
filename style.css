@@ -1,3 +1,184 @@
-.gambar {
-    background-image: url(Kiminonawa_Moment.jpg);
+:root {
+    --background: white;
+    --fontcolor: black;
+    --backgroundmalam: black;
+    --fontmalam: white;
+    --background-image: #8EC5FC;
+    --background-kotak: #ececec;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.containir {
+    width: 100%;
+    height: 75px;
+    border-bottom: 2px solid #ececec;
+}
+
+.wraper {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.wraper a {
+    font-size: xx-large;
+    color: var(--fontcolor);
+    float: left;
+}
+
+.wraper img {
+    z-index: -1;
+    float: left;
+}
+
+.wraper p {
+    float: left;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wraper ul {
+    float: left;
+    margin: 0px 180px 0px 210px;
+    padding: 0;
+}
+
+.wraper ul li {
+    float: left;
+    margin: 0;
+}
+
+.wraper ul li a {
+    padding: 0px 20px 0px 20px;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.garis {
+    padding-right: 20px;
+}
+
+.garis2 {
+    padding-left: 20px;
+}
+
+.garis1 {
+    border-right: 2px solid #ececec;
+    border-left: 2px solid #ececec;
+}
+
+
+#text {
+    border: none;
+    width: 185px;
+    height: 36px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+#cari {
+    border: none;
+    width: 50px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #4e4e4e;
+    color: white;
+    font-size: medium;
+}
+
+.container {
+    height: 10vh;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: inherit;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper ul {
+    float: left;
+}
+
+.wrapper ul li {
+    float: left;
+    margin: 0px 40px 0px 40px;
+    padding: 23px;
+}
+
+.wrapper ul li a{
+    color: var(--fontcolor);
+}
+
+.kotak {
+    width: 100%;
+    background-color: var(--background);
+    justify-content: center;
+    display: flex;
+}
+
+.isikotak {
+    width: 67%;
+    background-color: var(--background-kotak);
+    position: relative;
+}
+
+.isikotak h3 {
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+    color: white;
+}
+
+.isikotak p {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 15px;
+    color: white;
+}
+
+.isikotak h3, .isikotak p {
+    text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 500px) {
+    .wraper p {
+        margin-right: 40px;
+        font-size: x-large;
+    }
+    #text {
+        width: 150px;
+    }
+    .wrapper ul li {
+        margin: 0px 20px 0px 20px;
+    }
+    .kotak {
+        height: 80vh;
+    }
+    .isikotak {
+        width: 100%;
+    }
 }
